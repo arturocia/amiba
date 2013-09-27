@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- Overwrite Convention -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.convention.package.locators" value="controller" />
+	<constant name="struts.convention.action.suffix" value="Controller" />
+	<constant name="struts.convention.action.mapAllMatches" value="true" />
+	<constant name="struts.convention.default.parent.package"
+		value="besp-cdt" />
+	<constant name="struts.devMode" value="false" />
+	<!-- <constant name="struts.messages.error.file.too.large" value="El tamaño 
+		del archivo debe ser menor a 5Mb." /> <constant name="struts.messages.error.content.type.not.allowed" 
+		value="El formato del archivo no es soportado. Seleccione un documento PDF 
+		o una imagen PNG." /> -->
+	<constant name="struts.multipart.maxSize" value="5242880" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.mapper.idParameterName" value="idSel" />
+	<constant name="struts.convention.result.path" value="/contenido" />
+	<constant name="struts.action.excludePattern" value="/dwr.*,/simpleCaptcha.jpg" />
+
+	<package name="besp-cdt" extends="rest-default,json-default">
+
+		<interceptors>
+			<!--configuro el interceptor -->
+			<interceptor name="autenticarInterceptor"
+				class="mx.ipn.escom.cdt.besp.interceptor.AutenticarInterceptor" />
+			<interceptor-stack name="bespCdtStack">
+				<interceptor-ref name="autenticarInterceptor" />
+				<interceptor-ref name="exception" />
+				<interceptor-ref name="alias" />
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="messages">
+					<param name="operationMode">AUTOMATIC</param>
+				</interceptor-ref>
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="i18n" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="debugging" />
+				<interceptor-ref name="profiling" />
+				<interceptor-ref name="actionMappingParams" />
+				<interceptor-ref name="scopedModelDriven" />
+				<interceptor-ref name="modelDriven">
+					<param name="refreshModelBeforeResult">true</param>
+				</interceptor-ref>
+				<interceptor-ref name="fileUpload">
+					<param name="allowedTypes">application/pdf,image/png</param>
+					<param name="maximumSize">5242880</param>
+				</interceptor-ref>
+				<interceptor-ref name="checkbox" />
+				<interceptor-ref name="staticParams" />
+				<interceptor-ref name="params">
+					<!-- <param name="excludeParams">dojo\..*</param> -->
+					<param name="excludeParams">dojo\..*,^struts\..*</param>
+				</interceptor-ref>
+				<interceptor-ref name="rest" />
+				<interceptor-ref name="conversionError" />
+				<interceptor-ref name="validation">
+					<param name="excludeMethods">input,back,cancel,browse,index,show,edit,editNew</param>
+					<param name="validateAnnotatedMethodOnly">true</param>
+				</interceptor-ref>
+				<interceptor-ref name="jsonValidation" />
+				<interceptor-ref name="restWorkflow">
+					<param name="excludeMethods">input,back,cancel,browse,index,show,edit,editNew</param>
+				</interceptor-ref>
+
+
+
+			</interceptor-stack>
+		</interceptors>
+       <!-- 
+       	<default-interceptor-ref name="bespCdtStack" />
+		<global-results>
+			<result name="login">/login.jsp</result>
+			<result name="error">/errorPage.jsp</result>
+			<result name="error500">/contenido/404.jsp</result>
+			<result name="next" type="redirectAction">${#session["current"]}</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.NoSuchMethodException"
+				result="error500" />
+			<exception-mapping exception="java.lang.IllegalArgumentException"
+				result="error500" />
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>-->
+	</package>
+
+
+</struts>

@@ -1,0 +1,6 @@
+/**
+ * 
+ */
+$(function() {
+	$("#tblPrograma").dataTable();
+});

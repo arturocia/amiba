@@ -1,0 +1,13 @@
+
+#tblDatosProyecto tr.dtsProy td
+{
+	/*background-color:#EAF2D3;*/
+	background-color:#DDFFD9;
+}
+
+#tblDatosProyecto td 
+{
+font-size:1em;
+/*border:1px solid #98bf21;*/
+padding:3px 70px 2px 7px;
+}

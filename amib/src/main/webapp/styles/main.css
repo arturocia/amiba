@@ -1,0 +1,345 @@
+
+@import "forms.css";
+
+body{
+	text-align: center;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+/*  	background-image: url("../images/fondo.png");*/
+  	background-repeat: repeat;
+  	font-family: Helvetica;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    color: #146359;
+}
+
+a{
+	color: #05a
+}
+
+#pageHeader {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 11px;
+  	background-image: url("../images/banner/fondo.png");
+  	background-repeat: repeat-x;
+  	min-height: 100px;
+  	max-height: 100px;
+	min-width: 1024px;
+}
+
+#pageHeader *{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+  	min-height:100px;
+  	max-height:100px;
+}
+
+.banner{
+    background-image: url("../images/banner/banner.png");
+    background-position: bottom left;
+	text-align: right;
+	margin: 0px;
+	padding:0px;
+	border:0px;
+    min-width:1014px;
+    min-height:100px;
+    background-repeat: no-repeat;
+}
+
+#pageMain, pageHMenu{
+	display: table-row;	
+	width: 100%;
+	min-height:600px;
+	height:400px;
+  	min-width:1014px;
+}
+
+#pageMenu{
+	font-variant: small-caps; 
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	background-color: white;
+/*	background-image: url("../images/fondo2.png");*/
+	color: #def;
+	padding: 5px;
+/*	border: 4px solid;
+	border-color: #CDB;*/
+	font-size: small;
+	width: 210px;	
+	max-width: 210px;
+	min-width: 210px;
+}
+
+/*#pageMenu .menu:before {
+  background: transparent url("../images/menu-border-right.png") scroll no-repeat top right;
+  margin-bottom: -20px;
+  height: 15px;
+  display: block;
+  border: none;
+  content: url("../images/menu-border-left.png");
+  padding: 0;
+  line-height: 0.1;
+  font-size: 1px;
+}
+
+#pageMenu .menu:after {
+  display: block;
+  line-height: 0.1;
+  font-size: 1px;
+  content:  url("../images/menu-border-bottom-left.png");
+  margin: 0 0 -1px 0;
+  height: 15px;
+  background: white;
+  background: transparent url("../images/menu-border-bottom-right.png") scroll no-repeat bottom right ;
+  padding: 0;
+}*/
+
+
+
+#pageMenu .menu{
+	background-color: white;
+	-moz-border-radius: 15px; /* Firefox */
+  	-webkit-border-raedius: 15px; /* Safari and Chrome */
+  	border-radius: 15px;	
+  	border: 1px solid #69a;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	behavior: url(border-radius.htc);
+}
+
+
+#pageMenu .menu h3{
+	background-color: #65b753;
+  	background-image: url("../images/title-bg-menu.png");
+   	background-repeat: repeat-x;	
+  	padding: 7px;
+	margin-bottom: 0px;
+	color: white		
+}
+
+
+
+#pageMenu h4{
+	background-color: #65b753;
+  	background-image: url("../images/title-bg-menu.png");
+   	background-repeat: repeat-x;	
+   	background-repeat: repeat-x;	
+  	padding: 7px;
+	margin-bottom: 0px;
+	color: white		
+}
+
+#pageMenu ul{
+	text-indent: 0px;
+}
+
+#pageMenu a{
+ /* 	background-image: url("../images/title-bg-menu.png");
+   	background-repeat: repeat-x;	*/
+	padding: 2px;
+	display: block;
+	text-decoration: none;	
+	color: green;
+	/*background-color: #65a79f;*/
+}
+
+#pageMenu a:hover{
+	outline: 1px dashed #280;
+}
+
+#pageMenu .area:before{
+	content: url("../images/icons/menu/area.png")
+}
+
+#pageMenu .delegacion:before{
+	content: url("../images/icons/menu/delegacion.png")
+}
+
+#pageMenu .planta:before{
+	content: url("../images/icons/menu/planta.png")
+}
+
+#pageMenu .punto:before{
+	content: url("../images/icons/menu/punto.png")
+}
+
+#pageMenu .tiradero:before{
+	content: url("../images/icons/menu/tiradero.png")
+}
+
+#pageMenu .vehiculo:before{
+	content: url("../images/icons/menu/vehiculo.png")
+}
+
+#pageMenu .ruta:before{
+	content: url("../images/icons/menu/ruta.png")
+}
+
+#pageMenu .asignacion:before{
+	content: url("../images/icons/menu/asignacion.png")
+}
+
+#pageMenu .barrido:before{
+	content: url("../images/icons/menu/barrido.png")
+}
+
+#pageMenu .cerrar:before{
+	content: url("../images/icons/menu/cerrar.png")
+}
+
+#pageMenu .reporte:before{
+	content: url("../images/icons/menu/reporte.png")
+}
+
+#pageMenu .material:before{
+	content: url("../images/icons/menu/material.png")
+}
+
+#pageMenu .peso:before{
+	content: url("../images/icons/menu/peso.png")
+}
+
+#pageMenu .estacion:before{
+	content: url("../images/icons/menu/estacion.png")
+}
+
+#pageMenu .proceso:before{
+	content: url("../images/icons/menu/proceso.png")
+}
+
+#pageMenu .vialidad:before{
+	content: url("../images/icons/menu/vialidad.png")
+}
+
+#pageMenu .infraestructura:before{
+	content: url("../images/icons/menu/infraestructura.png")
+}
+
+#pageMenu .medida:before{
+	content: url("../images/icons/menu/medida.png")
+}
+
+#pageMenu .tipo:before{
+	content: url("../images/icons/menu/tipo.png")
+}
+
+#pageMenu .subprograma:before{
+	content: url("../images/icons/menu/subprograma.png")
+}
+
+#pageMenu .combustible:before{
+	content: url("../images/icons/menu/combustible.png")
+}
+
+#pageMenu .password:before{
+	content: url("../images/icons/menu/password.png")
+}
+
+#pageMenu .subproducto:before{
+	content: url("../images/icons/menu/subproducto.png")
+}
+
+
+#pageHMenu{
+	font-variant: small-caps; 
+	vertical-align: top;
+	text-align: left;
+	background-color: #280;
+	font-size: small;
+}
+
+#pageContent {
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+  	display: table-cell;
+  	width: 100%;
+  	min-width: 756px;
+}
+
+
+#pageSession{
+	display: table-cell;
+	padding: 5px;
+	border: 1px solid;
+	border-color:#AAA #888 #888 #AAA;
+	font-size: small;
+	font-variant: normal;
+	text-align: left;
+	vertical-align: top;
+	margin: 5px;
+	color: #280;
+}
+
+#pageSession .nombre:before{
+	content: url("../images/icons/menu/user.png")
+}
+
+
+#sepMenu{
+	display: table-cell;
+}
+
+#sepMenu .sep{
+	display:table-cell;
+	border: 2px solid #280;
+	background: #ACF;
+	color: #280;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px	
+}
+
+#sepMenu .selected{
+	border: 2px solid #280;
+	background: #280;
+	color: white;
+}
+
+
+
+#pageFooter {
+	background-color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	font-size:10px;
+	padding: 5px;
+	padding-top:33px;
+	min-width:1014px;
+	color: #280;
+	border-radius: 15px;
+	border: 1px solid #69a;
+	min-height: 110px;
+	background-image: url("../images/equidad.jpg");
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+#pageFooter img {
+	border: 0px;
+}
+
+
+.button{
+	border: 1px solid;	
+	border-color: #CF8 #280 #280 #CF8;
+	padding: 2px;
+	background-color: white;		
+}
+
+.track{
+	
+	text-align:left;
+	padding:10px;
+	font-family: monospace;
+	color: #280	
+	
+}
+

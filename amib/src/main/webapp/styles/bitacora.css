@@ -1,0 +1,270 @@
+#containerBitacora
+{
+	width:100%;
+}
+
+#guiaVisual
+{
+	float:right;
+	font-size:12px;
+}
+
+#guiaVisual .icono
+{
+	height:12px;
+	width:12px;
+	border: 1px solid #DDD;
+	displa:inline-block;
+	margin-left:3px;
+	margin-right:3px;
+}
+
+#guiaVisual .iconoObservacion
+{
+	background-color: #333;
+	color:#333;
+}
+
+#guiaVisual .iconoTurnada
+{
+	background-color: #F0D524;
+	color:#F0D524;
+}
+
+#guiaVisual .iconoAtendida
+{
+	background-color: #238C00;
+	color:#238C00;
+}
+
+#guiaVisual .iconoNoAtendida
+{
+	background-color: #B50012;
+	color:#B50012;
+}
+
+#containerBitacora form, #contenedorRestricciones
+{
+	width:98%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	border:none;
+}
+
+#containerBitacora h2
+{
+	text-align:left;
+}
+
+#btnnueva
+{
+	/*position:absolute;*/
+	float:right;
+	margin-top:-55px;
+}
+
+.restriccion
+{
+	/*display: none;*/
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5px;
+	border: 1px solid #000;
+	background-color: #F2F3F5;
+}
+
+#nuevaRestriccion
+{
+	display: none;
+}
+
+.icon
+{
+	height:32px;
+	width:32px;
+	padding:4px;
+	margin:5px;
+	background-position:center; 
+   	background-repeat: no-repeat;
+	border: 1px solid #DDD;
+	display:inside-block;
+	float:left;
+	position:relative;
+}
+
+.noAtendida
+{
+	background-image: url("../images/iconos-notificaciones/32/mailplus32_white.png");
+	background-color: #B50012;
+}
+
+.atendida
+{
+	background-image: url("../images/iconos-notificaciones/32/mailopened32_white.png");
+	background-color: #238C00;
+}
+
+.turnada
+{
+	background-image: url("../images/iconos-notificaciones/32/mail32_white.png");
+	background-color: #F0D524;
+}
+
+.observacion
+{
+	background-image: url("../images/iconos-notificaciones/32/mail32_white.png");
+	background-color: #333;
+}
+
+.nuevaRestriccion
+{
+	background-image: url("../images/iconos-notificaciones/32/mail32_white.png");
+	background-color: #CCC;
+}
+
+
+.titleRes{
+	background-image:none;
+	margin-bottom: 5px;
+	margin-left:50px;
+	margin-top:6px;
+	margin-right:5px;
+	height:40px;
+	border-bottom-style: dashed; 
+	border-bottom-color: #DDD; 
+	border-bottom-width: 1px;
+	position:relative;
+}
+
+.titleRes .content
+{
+	position:Absolute;
+	bottom:0px;
+}
+
+.tituloProyecto
+{
+	color: #333;
+	font-size:20px;
+}
+
+.idRes
+{
+	color:#545454;
+	font-size:12px;	
+}
+
+.section{
+	background: #aD8;
+  	padding: 2px;
+	margin-bottom: 5px;
+	text-align:left;
+	border-top: 1px solid #280;
+	border-left: 1px solid #280;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.titleResS{
+	background-color:#EEE;
+	color: #121212;
+	border-bottom-color: #DDD; 
+	border-bottom-width: 1px;
+	position:relative;
+}
+
+.tituloDescripcion
+{
+	padding:5px;
+	font-size:12px;
+}
+
+#cuerpoRestriccion
+{
+	margin: 10px;
+	border: 1px solid #A3A3A3;
+	background-color: #FFF;
+}
+
+.usuarios
+{
+	
+	background-position:left center;
+   	background-repeat: no-repeat;
+	background-image: url("../images/iconos-notificaciones/16/arrowright16.png");
+	background-color:#F5F5F5;
+	color:#000;
+	padding:5px;
+	border-bottom-style: dashed; 
+	border-bottom-color: #DDD; 
+	border-bottom-width: 1px;
+	padding-left:20px;
+}
+
+.usuarioFecha
+{
+	possition:absolute;
+	float:right;
+	right:0px;
+	font-size:12px;
+}
+
+#inputs, .mensajes
+{
+	margin: 5px;
+}
+
+.inputs
+{
+	margin: 5px;
+	display:none;
+	border: 1px solid #A3A3A3;
+}
+
+.mensajes
+{
+	border: 1px solid #A3A3A3;
+}
+
+.mensajes p
+{
+	margin:0px;
+	padding:5px;
+}
+
+/*#cuerpoRestriccion textarea
+{
+	width:100%;
+	resize:none;
+	height:100px;
+}*/
+
+.areaText
+{
+	overflow: auto;
+	outline: none;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:5px;
+	padding:0px;
+	width:100%;
+	resize:none;
+	height:100px;
+	border: 1px solid #888;
+	
+}
+
+#controles
+{
+	padding:5px;
+	text-align:right;
+}
+
+.controles
+{
+	padding:5px;
+	text-align:right;
+}

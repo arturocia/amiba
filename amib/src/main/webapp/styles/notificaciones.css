@@ -1,0 +1,85 @@
+#contenedorNotificaciones
+{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:5px;
+	text-align:left;
+}
+
+#tituloNotificaciones
+{
+	font-size:32px;
+	mergin:3px;
+}
+
+.seccionNotificaciones
+{
+	padding:5px;	
+}
+
+.tituloSeccion
+{
+	font-size:22px;
+	margin:3px;
+	border-bottom-style: solid; 
+	border-bottom-color: #CCC; 
+	border-bottom-width: 1px;
+}
+
+.notificaciones
+{
+	padding:5px;
+}
+
+.notificacion
+{
+	border-bottom-style: dashed; 
+	border-bottom-color: #DDD; 
+	border-bottom-width: 1px;
+	font-size:14px;
+	margin:4px; 
+	height:32px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 37px;	
+}
+
+.nuevoProyecto
+{
+	background-image: url('../images/iconos-notificaciones/32/linedpaperplus32.png');
+}
+
+.edicionProyecto
+{
+	background-image: url('../images/iconos-notificaciones/32/linedpaperpencil32.png');
+}
+
+.aprobacionProyecto
+{
+	background-image: url('../images/iconos-notificaciones/32/linedpapercheck32.png');
+}
+
+.rechazoProyecto
+{
+	background-image: url('../images/iconos-notificaciones/32/linedpaperminus32.png');
+}
+
+.cerrarProyecto
+{
+	background-image: url('../images/iconos-notificaciones/32/linedpaperlock32.png');
+}
+
+.atenderBitacoraProyecto
+{
+	background-image: url('../images/iconos-notificaciones/32/comment32.png');
+}
+
+.detallesNotificacion
+{
+	float:right;
+	color:#CCC;
+	font-size:11px;
+}

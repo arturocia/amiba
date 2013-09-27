@@ -1,0 +1,96 @@
+
+@import "forms.css";
+
+body{
+	text-align: center;
+	width: 100%;
+	margin:0px;
+  	/*background-image: url("../images/fondo.png");
+  	background-repeat: repeat;*/
+  	font-family: Helvetica;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    color: #480;
+}
+
+a{
+	color: #05a
+}
+
+
+#pageMain, pageHMenu{
+	width: 100%;
+	min-width:1014px;
+}
+
+
+#pageContent {
+	background-color: #fff;
+	padding:0px;
+	margin:0px;
+	/*padding: 20px;*/
+	text-align: center;
+  	/*display: table-cell;*/
+  	width: 100%;
+  	/*min-width: 1025px;*/
+	/*background-image: url("../images/rule.png");
+	background-position: bottom left;
+	background-repeat: repeat-x;*/
+}
+
+
+#pageSession{
+	display: table-cell;
+	padding: 5px;
+	border: 1px solid;
+	border-color:#AAA #888 #888 #AAA;
+	font-size: small;
+	font-variant: normal;
+	text-align: left;
+	vertical-align: top;
+	margin: 5px;
+	color: #280;
+}
+
+#pageSession .nombre:before{
+	content: url("../images/icons/menu/user.png")
+}
+
+
+#sepMenu{
+	display: table-cell;
+}
+
+#sepMenu .sep{
+	display:table-cell;
+	border: 2px solid #280;
+	background: #ACF;
+	color: #280;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px	
+}
+
+#sepMenu .selected{
+	border: 2px solid #280;
+	background: #280;
+	color: white;
+}
+
+.button{
+	border: 1px solid;	
+	border-color: #CF8 #280 #280 #CF8;
+	padding: 2px;
+	background-color: white;		
+}
+
+.track{
+	
+	text-align:left;
+	padding:10px;
+	font-family: monospace;
+	color: #280	
+	
+}

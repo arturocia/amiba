@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	<excludes>
+		<pattern>/styles/*</pattern>
+		<pattern>/scripts/*</pattern>
+		<pattern>/images/*</pattern>
+		<pattern>/dwr/*</pattern>
+		<pattern>*/operacion-editar-datos-proyecto*otrasEstructuras*</pattern>
+	</excludes>
+
+	<decorator name="layout" page="layout.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name="layoutOperacion" page="layoutOperacion.jsp">
+		<pattern>/operacion-*</pattern>
+		<pattern>/catalogo-accion*</pattern>
+		<pattern>/catalogo-indicador*</pattern>
+		<pattern>/catalogo-indicador*</pattern>
+		<pattern>/aprobar-proyecto/*</pattern>
+	</decorator>
+</decorators> 

@@ -1,0 +1,3 @@
+$(function() {
+	$("#tblEstudios").dataTable();
+	});
